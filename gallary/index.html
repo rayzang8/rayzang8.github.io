@@ -668,44 +668,6 @@
             }
         }
 
-        // bind WeChat api
-        function bindWeChatApi() {
-            var shareData = {
-                title: SHARE_INFO.TITLE, // 分享标题
-                desc: SHARE_INFO.DESCRIPTION, // 分享描述
-                link: SHARE_INFO.LINK, // 分享链接
-                imgUrl: SHARE_INFO.IMAGE
-            };
-            var noncestr = 'hf3dRsY5Y1fhaXQX';
-            var timestamp = Math.floor(+new Date() / 1000);
-
-            $.ajax({
-                type: 'GET',
-                url: 'http://m.viplux.com/api/activity0104/sign?noncestr=' + noncestr + '&timestamp=' + timestamp + '&url=' + encodeURIComponent(SHARE_INFO.LINK) + '&callback=?',
-                dataType: 'jsonp',
-                success: function (res) {
-                    if (res.code === 200) {
-                        wx.config({
-                            debug: false,
-                            appId: 'wx8bdacabc56d52f8c',//唯风尚应用id
-                            timestamp: timestamp,
-                            nonceStr: noncestr,
-                            signature: res.data,
-                            jsApiList: [
-                                'onMenuShareTimeline',
-                                'onMenuShareAppMessage'
-                            ]
-                        });
-
-                        wx.ready(function () {
-                            wx.onMenuShareTimeline(shareData);
-                            wx.onMenuShareAppMessage(shareData);
-                        });
-                    }
-
-                }
-            });
-        }
 
         // app share
         function sharePage() {
