@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>南京西路 逛不完的惊喜</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../common/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../common/animate.css"/>
+    <link rel="stylesheet" href="app.css"/>
+    <!-- 以下zepto经过定制不适用于其它 -->
+    <script type="text/javascript" src="../common/zepto.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/iScroll/5.2.0/iscroll.min.js"></script>
+    <!--<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+    <script type="text/javascript" src="resources.js"></script>
+    <script type="text/javascript" src="brands.js"></script>
+    <script type="text/javascript" src="stores-config.js?t=20150415"></script>
+</head>
+<body>
+<div id="home" class="page">
+    <div class="tilter">
+        <img data-path="home.background" class="tilter-bg"/>
+
+        <div class="home-start">
+            <img data-path="home.start" data-reload="true"/>
+        </div>
+    </div>
+    <div class="loading">
+        正在盖楼<span class="ellipsis"></span>
+    </div>
+</div>
+<div id="intro" class="page">
+    <div class="tilter">
+        <img data-path="intro.background" class="tilter-bg"/>
+
+        <div class="labels full">
+        </div>
+        <div class="crosshairs">
+            <img data-path="intro.crosshairs"/>
+        </div>
+    </div>
+</div>
+<div id="stores" class="page">
+    <div class="scroller">
+        <div class="store">
+            <div class="wall">
+                <div class="wall-header background" data-path="resources.header">
+                </div>
+                <div class="wall-body background" data-path="resources.wall.background">
+                    <div class="wall-gap">
+                        <img data-path="resources.wall.gap"/>
+                    </div>
+                    <div class="pillar">
+                        <div class="wall-pattern">
+                            <img data-path="resources.pattern"/>
+                        </div>
+                        <img data-path="resources.pillar"/>
+                    </div>
+                    <div class="wall-gap">
+                        <img data-path="resources.wall.gap"/>
+                    </div>
+                    <div class="showcase">
+                        <div class="showcase-start">
+                            <img data-path="resources.showcase.start"/>
+                        </div>
+                        <div class="showcase-middle background" data-path="resources.showcase.middle">
+                            <div class="showcase-feature">
+                                <img data-path="resources.feature"/>
+                                <img class="img-element" data-path="resources.element.0"
+                                     data-style="positions.element.0"/>
+                                <img class="img-element" data-path="resources.element.1"
+                                     data-style="positions.element.1"/>
+                                <img class="img-element" data-path="resources.element.2"
+                                     data-style="positions.element.2"/>
+                                <img class="img-element" data-path="resources.element.3"
+                                     data-style="positions.element.3"/>
+                                <img class="img-element" data-path="resources.element.4"
+                                     data-style="positions.element.4"/>
+                                <img class="img-element" data-path="resources.element.5"
+                                     data-style="positions.element.5"/>
+
+                                <div class="wall-pattern">
+                                    <img class="img-brand" data-path="resources.brand"/>
+                                    <img class="img-pattern" data-path="resources.pattern"/>
+                                    <img data-path="resources.pattern"/>
+                                </div>
+                                <div class="showcase-phonograph">
+                                    <img data-path="resources.showcase.phonograph"/>
+                                </div>
+                                <div class="showcase-music">
+                                    <img data-path="resources.showcase.music"/>
+                                </div>
+                                <div class="showcase-intro">
+                                    <img data-path="resources.showcase.intro.header"/>
+
+                                    <div class="showcase-intro-body background"
+                                         data-path="resources.showcase.intro.body">
+                                        <div data-path="description">
+                                        </div>
+                                    </div>
+                                    <img data-path="resources.showcase.intro.footer"/>
+                                </div>
+                            </div>
+                            <div class="showcase-frame">
+                                <div class="wall-pattern">
+                                    <img data-path="resources.pattern"/>
+                                </div>
+                                <img class="img-frame" data-path="resources.frame"/>
+
+                                <div class="showcase-product">
+                                    <img data-path="products.0.image"/>
+                                </div>
+                                <a class="pointer" target="_blank" data-path="products.0.link"
+                                   data-seed="products.0.seed">
+                                    <img data-path="resources.nav.pointer"/>
+                                </a>
+                            </div>
+                            <div class="showcase-gap">
+                                <img data-path="resources.showcase.gap"/>
+
+                                <div class="wall-pattern">
+                                    <img data-path="resources.pattern"/>
+                                </div>
+                                <div class="showcase-light">
+                                    <img class="img-light" data-path="resources.light"/>
+
+                                    <div class="lighting">
+                                        <img data-path="resources.showcase.lighting"/>
+                                    </div>
+                                </div>
+                                <div class="showcase-decoration">
+                                    <img class="img-decoration" data-path="resources.decoration.0">
+                                </div>
+                            </div>
+                            <div class="showcase-frame">
+                                <div class="wall-pattern">
+                                    <img data-path="resources.pattern"/>
+                                </div>
+                                <img class="img-frame" data-path="resources.frame"/>
+
+                                <div class="showcase-product">
+                                    <img data-path="products.1.image"/>
+                                </div>
+                                <a class="pointer" target="_blank" data-path="products.1.link"
+                                   data-seed="products.1.seed">
+                                    <img data-path="resources.nav.pointer"/>
+                                </a>
+                            </div>
+                            <div class="showcase-gap">
+                                <img data-path="resources.showcase.gap"/>
+
+                                <div class="wall-pattern">
+                                    <img data-path="resources.pattern"/>
+                                </div>
+                                <div class="showcase-light">
+                                    <img class="img-light" data-path="resources.light"/>
+
+                                    <div class="lighting">
+                                        <img data-path="resources.showcase.lighting"/>
+                                    </div>
+                                </div>
+                                <div class="foreground">
+                                    <img class="img" data-path="resources.foreground.0"/>
+                                </div>
+                            </div>
+                            <div class="showcase-frame">
+                                <div class="wall-pattern">
+                                    <img data-path="resources.pattern"/>
+                                </div>
+                                <img class="img-frame" data-path="resources.frame"/>
+
+                                <div class="showcase-product">
+                                    <img data-path="products.2.image"/>
+                                </div>
+                                <a class="pointer" target="_blank" data-path="products.2.link"
+                                   data-seed="products.2.seed">
+                                    <img data-path="resources.nav.pointer"/>
+                                </a>
+                            </div>
+                            <div class="showcase-gap">
+                                <img data-path="resources.showcase.gap"/>
+
+                                <div class="wall-pattern">
+                                    <img data-path="resources.pattern"/>
+                                </div>
+                                <div class="showcase-light">
+                                    <img class="img-light" data-path="resources.light"/>
+
+                                    <div class="lighting">
+                                        <img data-path="resources.showcase.lighting"/>
+                                    </div>
+                                </div>
+                                <div class="showcase-decoration">
+                                    <img class="img-decoration" data-path="resources.decoration.1">
+                                </div>
+                            </div>
+                            <div class="showcase-frame">
+                                <div class="wall-pattern">
+                                    <img data-path="resources.pattern"/>
+                                </div>
+                                <img class="img-frame" data-path="resources.frame"/>
+
+                                <div class="showcase-product">
+                                    <img data-path="products.3.image"/>
+                                </div>
+                                <a class="pointer" target="_blank" data-path="products.3.link"
+                                   data-seed="products.3.seed">
+                                    <img data-path="resources.nav.pointer"/>
+                                </a>
+                            </div>
+                            <div class="showcase-gap">
+                                <img data-path="resources.showcase.gap"/>
+
+                                <div class="wall-pattern">
+                                    <img data-path="resources.pattern"/>
+                                </div>
+                                <div class="showcase-light">
+                                    <img class="img-light" data-path="resources.light"/>
+
+                                    <div class="lighting">
+                                        <img data-path="resources.showcase.lighting"/>
+                                    </div>
+                                </div>
+                                <div class="foreground">
+                                    <img class="img" data-path="resources.foreground.1"/>
+                                </div>
+                            </div>
+                            <div class="showcase-frame">
+                                <div class="wall-pattern">
+                                    <img data-path="resources.pattern"/>
+                                </div>
+                                <img class="img-frame" data-path="resources.frame"/>
+
+                                <div class="showcase-product">
+                                    <img data-path="products.4.image"/>
+                                </div>
+                                <a class="pointer" target="_blank" data-path="products.4.link"
+                                   data-seed="products.4.seed">
+                                    <img data-path="resources.nav.pointer"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="showcase-end">
+                            <img data-path="resources.showcase.end">
+                        </div>
+                    </div>
+                    <div class="wall-gap">
+                        <img data-path="resources.wall.gap"/>
+                    </div>
+                    <div class="pillar">
+                        <div class="wall-pattern">
+                            <img data-path="resources.pattern"/>
+                        </div>
+                        <img data-path="resources.pillar"/>
+                    </div>
+                    <div class="door">
+                        <div class="wall-pattern">
+                            <div class="wall-logo">
+                                <img data-path="resources.brand"/>
+                            </div>
+                        </div>
+                        <div class="door-header">
+                            <img data-path="resources.ribbon"/>
+                        </div>
+                        <div class="door-body">
+                            <img data-path="resources.door"/>
+
+                            <div class="door-sign">
+                                <img data-path="resources.sign"/>
+                            </div>
+                        </div>
+                        <a target="_blank" class="pointer" data-path="link" data-seed="seed.door">
+                            <img data-path="resources.nav.pointer"/>
+                        </a>
+                    </div>
+                    <div class="pillar">
+                        <div class="wall-pattern">
+                            <img data-path="resources.pattern"/>
+                        </div>
+                        <img data-path="resources.pillar"/>
+
+                        <div class="next">
+                            <img data-path="resources.nav.next"/>
+                        </div>
+                    </div>
+                    <div class="wall-gap">
+                        <img data-path="resources.wall.gap"/>
+                    </div>
+                </div>
+            </div>
+            <div class="scene">
+                <img data-path="resources.scene"/>
+                <button class="btn-again background" data-path="resources.nav.again"></button>
+            </div>
+            <div class="street background" data-path="resources.street.background">
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav-icon">
+            <img data-path="store.nav.icon"/>
+        </div>
+        <div class="nav-axis">
+        </div>
+        <div class="nav-body">
+        </div>
+    </div>
+</div>
+<div id="loading">
+    <img data-path="store.nav.loading"/>
+</div>
+<script type="text/javascript">
+    var isApp = false;
+    function setUserInfo(param) {
+        isApp = true;
+    }
+
+
+    $(function () {
+        var MAX_TILT_ANGLE = 40;
+        var brands = window.brands || [];
+        var labels = shuffle(brands.inactive).concat(shuffle(brands.active.map(function (item, index) {
+            item.index = index;
+            item.active = true;
+            return item;
+        })));
+
+        // Prevent default touch behaviours
+        document.addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        }, false);
+
+        var resources = window.resources || {};
+        var home = $('#home');
+        var intro = $('#intro');
+        var stores = $('#stores');
+        var loading = $('#loading');
+        var store = stores.find('.store');
+        var wall = store.find('.wall');
+        var scene = store.find('.scene');
+        var sceneImage = scene.find('img');
+        var scroller = stores.find('.scroller');
+        var ellipsis = home.find('.ellipsis');
+        var crosshairs = $('.crosshairs');
+        var btnHome = store.find('.btn-home');
+        var btnAgain = store.find('.btn-again');
+        var foreground = store.find('.foreground');
+        var nav = stores.find('.nav');
+        var navIcon = nav.find('.nav-icon');
+        var navBody = nav.find('.nav-body');
+        var showcaseIntro = store.find('.showcase-intro');
+        var crosshairsImage = crosshairs.find('img');
+        var crosshairsWidth = 0;
+        var crosshairsHeight = 0;
+        var pageWidth = 0;
+        var currentIndex = -1;
+        var currentPage = 'home';
+        var storesConfigArray = [];
+        var storesConfigMap = {};
+        var storesCount = window.storesConfig.length;
+        var resetting = false;
+        var resizing = false;
+        var iscroll = null;
+        var tilterHandler = null;
+
+        var SHARE_INFO = {
+            TITLE: '南京西路 逛不完的惊喜',
+            DESCRIPTION: '手机逛街第二弹',
+            LINK: location.href.split('#')[0],
+            IMAGE: resources.share
+        };
+
+        function nop() {
+        }
+
+        function random(min, max) {
+            if (max == null) {
+                max = min;
+                min = 0;
+            }
+            return min + Math.floor(Math.random() * (max - min + 1));
+        }
+
+        function shuffle(obj) {
+            var set = obj && obj.length === +obj.length ? obj : _.values(obj);
+            var length = set.length;
+            var shuffled = [];
+            for (var index = 0, rand; index < length; index++) {
+                rand = random(0, index);
+                if (rand !== index) shuffled[index] = shuffled[rand];
+                shuffled[rand] = set[index];
+            }
+            return shuffled;
+        }
+
+        function getByPath(target, path) {
+            var result = target;
+            if (path) {
+                var tokens = path.split('.'), token,
+                        i = 0, length = tokens.length;
+
+                for (; result && i < length; i++) {
+                    token = tokens[i];
+                    result = result[token];
+                }
+            }
+
+            return result;
+        }
+
+        function parseResources() {
+            $.each(window.storesConfig, function (i, config) {
+                $.each(config.resources, function (key, value) {
+                    var pluralKey = key + 's';
+
+                    if (Array.isArray(value)) {
+                        config.resources[key] = value.map(function (item) {
+                            return resources.store[pluralKey][item];
+                        });
+                    }
+                    else if (typeof value === 'number') {
+                        config.resources[key] = resources.store[pluralKey][value];
+                    }
+                    else if (value === true) {
+                        config.resources[key] = resources.store[key];
+                    }
+                    else {
+                        config.resources[key] = value;
+                    }
+                });
+
+                config.index = i;
+                storesConfigArray.push(config);
+                storesConfigMap[config.name.toLowerCase()] = config;
+            });
+        }
+
+        function loadResources(target, resources, callback) {
+            var elements = $(target).find('[data-path]');
+            var total = elements.length;
+            var counter = 0;
+
+            callback = callback || nop;
+
+            function onload() {
+                counter++;
+                if (counter === total) {
+                    setTimeout(callback, 200);
+                }
+            }
+
+            elements.each(function () {
+                var $el = $(this);
+                var el = this;
+                var tag = el.tagName.toLowerCase();
+                var value = getByPath(resources, $el.data('path'));
+
+                if (tag === 'img') {
+                    if (value) {
+                        var style = getByPath(resources, $el.data('style'));
+                        if (style) {
+                            $el.css(style);
+                        }
+
+                        if ($el.data('reload')) {
+                            value += '?' + +new Date();
+                        }
+
+                        $el.css('opacity', 1);
+                        el.src = value;
+                        if (el.complete) {
+                            onload();
+                        }
+
+                        el.onload = el.onerror = function () {
+                            el.onload = el.onerror = null;
+                            onload();
+                        }
+                    }
+                    else {
+                        $el.attr('src', null);
+                        $el.css('opacity', 0);
+                        onload();
+                    }
+                }
+                else if (tag === 'a') {
+                    var seed = $el.data('seed');
+                    if (seed) {
+                        $el.attr('mars-seed', getByPath(resources, seed));
+                    }
+
+                    if (value) {
+                        $el.attr('href', isApp ? value['app'] : value['web']);
+                    }
+                    else {
+                        $el.attr('href', null);
+                    }
+
+                    onload();
+                }
+                else {
+                    if ($el.hasClass('background')) {
+                        $el.css('background-image', value ? 'url("' + value + '")' : null);
+                    }
+                    else {
+                        $el.text(value);
+                    }
+
+                    onload();
+                }
+            });
+        }
+
+        function createTilters() {
+            pageWidth = home.width();
+            $('.tilter').each(function () {
+                var tilter = $(this);
+                var width = tilter.find('.tilter-bg').width();
+
+                tilter.css({
+                    width: width,
+                    '-webkit-transform': 'translate3d(' + (pageWidth - width) / 2 + 'px,0,0)'
+                });
+            });
+
+            window.addEventListener('deviceorientation', tilterHandler = function (e) {
+                var angle = e.gamma;
+                if (angle < MAX_TILT_ANGLE && angle > -MAX_TILT_ANGLE) {
+                    $('.tilter').each(function () {
+                        var tilter = $(this);
+                        if (!tilter.parent().hasClass('hidden')) {
+
+                            var width = tilter.find('.tilter-bg').width();
+                            tilter.css('-webkit-transform', 'translate3d(' + ((pageWidth - width) / 2 * (angle + MAX_TILT_ANGLE) / MAX_TILT_ANGLE) + 'px,0,0)');
+                        }
+                    });
+                }
+            });
+        }
+
+        function showLabels() {
+            var delay = 0;
+            crosshairsWidth = crosshairsImage.width();
+            crosshairsHeight = crosshairsImage.height();
+
+            $.each(labels, function (index, label) {
+                setTimeout(function () {
+                    var el = $('<div class="label animated bounceIn"></div>')
+                            .text(label.text)
+                            .addClass(label.active ? 'active' : '')
+                            .css({
+                                left: label.x,
+                                top: label.y
+                            });
+
+                    if (label.active) {
+                        el.attr('mars-seed', label.seed);
+                    }
+
+                    $('.labels').append(el);
+
+                    if ((!label.active && index % 8 === 0) || label.index === 0) {
+                        var position = el.position();
+                        var left = position.left + el.width() / 2 - crosshairsWidth / 2;
+                        var top = position.top + el.height() / 2 - crosshairsHeight / 2;
+
+                        if (label.active) {
+                            crosshairs.data('label', label.text);
+                            crosshairs.attr('mars-seed', label.seed);
+                        }
+
+                        crosshairs.css({
+                            '-webkit-transform': 'translate3d(' + left + 'px,' + top + 'px,0)'
+                        });
+                    }
+
+                }, 100 * index);
+
+                delay += 100;
+            });
+
+            setTimeout(function () {
+                crosshairs.addClass('active');
+            }, delay);
+        }
+
+        function goToStore(key, offset, callback) {
+            var index;
+            callback = callback || nop;
+            if (typeof key === 'number') {
+                index = key;
+            }
+            else if (typeof key === 'string') {
+                index = storesConfigMap[key.toLowerCase()].index;
+            }
+            else if (key == null) {
+                currentIndex = -1;
+                loading.show();
+                setTimeout(function () {
+                    loadResources('#stores .store', function () {
+                        resetting = true;
+                        iscroll.scrollTo(0, 0, 0);
+                        resetting = false;
+                    });
+                }, 500);
+            }
+
+            index = index < 0 ? 0 : index;
+
+            if (index >= storesCount - 1) {
+                index = storesCount - 1;
+            }
+
+            if (currentIndex != index) {
+                var config = storesConfigArray[index];
+
+                loading.show();
+                showcaseIntro.removeClass('active');
+                currentIndex = index;
+                scroller.width(10000);
+
+                setTimeout(function () {
+                    loadResources('#stores .store', config, function () {
+                        resetting = true;
+                        iscroll.refresh();
+                        iscroll.scrollTo(offset || 0, 0, 0);
+                        setTimeout(function () {
+                            loading.hide();
+
+                            if (offset == null) {
+                                iscroll.scrollBy(-100, 0, 1500);
+                            }
+
+                            navBody.find('.nav-item')
+                                    .removeClass('active')
+                                    .eq(index)
+                                    .addClass('active');
+                            callback();
+
+                            setTimeout(function () {
+                                resetting = false;
+                            }, 1600);
+
+                            setTimeout(function () {
+                                showcaseIntro.addClass('active');
+                            }, 500);
+                        }, 500);
+                    });
+                }, 100);
+            }
+        }
+
+        function enterStore(key, offset) {
+            currentPage = 'store';
+            window.removeEventListener('deviceorientation', tilterHandler);
+            home.addClass('hidden');
+            intro.addClass('hidden');
+            if (offset) {
+                goToStore(key, offset);
+            }
+            else {
+                nav.addClass('active');
+                goToStore(key, null, function () {
+                    setTimeout(function () {
+                        nav.removeClass('active');
+                    }, 1500);
+                });
+            }
+        }
+
+        // bind WeChat api
+        function bindWeChatApi() {
+            var shareData = {
+                title: SHARE_INFO.TITLE, // 分享标题
+                desc: SHARE_INFO.DESCRIPTION, // 分享描述
+                link: SHARE_INFO.LINK, // 分享链接
+                imgUrl: SHARE_INFO.IMAGE
+            };
+            var noncestr = 'hf3dRsY5Y1fhaXQX';
+            var timestamp = Math.floor(+new Date() / 1000);
+
+            $.ajax({
+                type: 'GET',
+                url: 'http://m.viplux.com/api/activity0104/sign?noncestr=' + noncestr + '&timestamp=' + timestamp + '&url=' + encodeURIComponent(SHARE_INFO.LINK) + '&callback=?',
+                dataType: 'jsonp',
+                success: function (res) {
+                    if (res.code === 200) {
+                        wx.config({
+                            debug: false,
+                            appId: 'wx8bdacabc56d52f8c',//唯风尚应用id
+                            timestamp: timestamp,
+                            nonceStr: noncestr,
+                            signature: res.data,
+                            jsApiList: [
+                                'onMenuShareTimeline',
+                                'onMenuShareAppMessage'
+                            ]
+                        });
+
+                        wx.ready(function () {
+                            wx.onMenuShareTimeline(shareData);
+                            wx.onMenuShareAppMessage(shareData);
+                        });
+                    }
+
+                }
+            });
+        }
+
+        // app share
+        function sharePage() {
+            var shareData = {
+                title: SHARE_INFO.TITLE,
+                content: SHARE_INFO.DESCRIPTION,
+                image: encodeURIComponent(SHARE_INFO.IMAGE),
+                url: encodeURIComponent(SHARE_INFO.LINK)
+            };
+
+            window.location.href = 'viplux://share/' + JSON.stringify(shareData);
+        }
+
+        function start() {
+            var counter = 0;
+            var timer = setInterval(function () {
+                switch (counter % 4) {
+                    case 0:
+                        ellipsis.text('');
+                        break;
+                    case 1:
+                        ellipsis.text('.');
+                        break;
+                    case 2:
+                        ellipsis.text('..');
+                        break;
+                    case 3:
+                        ellipsis.text('...');
+                        break;
+                }
+
+                counter++;
+
+            }, 500);
+
+            parseResources();
+            loadResources('#home, #intro, #stores .nav, #loading', resources, function () {
+                createTilters();
+                setTimeout(function () {
+                    clearInterval(timer);
+                    currentPage = 'intro';
+                    home.addClass('hidden');
+                    showLabels();
+                }, 4000);
+            });
+
+            $.each(storesConfigArray, function (index, config) {
+                navBody.append('<div class="nav-item"><div class="nav-label"><div class="label" mars-seed="' + config.seed.nav + '">' + config.name + '</div></div></div>')
+            });
+
+            crosshairs.on('tap', function () {
+                var label = crosshairs.data('label');
+                if (label) {
+                    enterStore(label);
+                }
+            });
+
+            navIcon.on('tap', function () {
+                nav.toggleClass('active');
+            });
+
+            navBody.on('tap', '.label', function () {
+                goToStore($(this).parents('.nav-item').index());
+            });
+
+            btnAgain.on('tap', function () {
+                goToStore(0);
+            });
+
+            $('.labels').on('tap', '.label.active', function () {
+                enterStore($(this).text());
+            });
+
+            $('.showcase-phonograph').on('tap', function () {
+                showcaseIntro.toggleClass('active');
+            });
+
+            iscroll = new IScroll('#stores', {
+                scrollX: true,
+                scrollY: false,
+                deceleration: 0.0015,
+                preventDefault:true,
+                preventDefaultException: {tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A|IMG)$/}
+            });
+
+            var refresh = iscroll.refresh;
+            var resetPosition = iscroll.resetPosition;
+
+            iscroll.refresh = function () {
+                var wallWidth = wall.width();
+                var sceneWidth = sceneImage.width();
+                var rf = this.wrapper.offsetHeight;		// Force reflow
+                var last = currentIndex === storesCount - 1;
+
+                scroller.width(wallWidth + sceneWidth);
+
+                this.wrapperWidth = this.wrapper.clientWidth;
+                this.wrapperHeight = this.wrapper.clientHeight;
+
+                /* REPLACE START: refresh */
+
+                this.scrollerWidth = wallWidth + sceneWidth;
+                this.scrollerHeight = this.scroller.offsetHeight;
+
+                if (last) {
+                    store.addClass('last');
+                    btnAgain.show();
+                    btnHome.show();
+                }
+                else {
+                    store.removeClass('last');
+                    btnAgain.hide();
+                    btnHome.hide();
+                }
+
+                if (currentIndex % 2) {
+                    foreground.hide();
+                }
+                else {
+                    foreground.show();
+                }
+
+                this.maxScrollX = this.wrapperWidth - wallWidth - (last ? sceneWidth : 0);
+                this.maxScrollY = this.wrapperHeight - this.scrollerHeight;
+
+                /* REPLACE END: refresh */
+
+                this.hasHorizontalScroll = this.options.scrollX && this.maxScrollX < 0;
+                this.hasVerticalScroll = this.options.scrollY && this.maxScrollY < 0;
+
+                if (!this.hasHorizontalScroll) {
+                    this.maxScrollX = 0;
+                    this.scrollerWidth = this.wrapperWidth;
+                }
+
+                if (!this.hasVerticalScroll) {
+                    this.maxScrollY = 0;
+                    this.scrollerHeight = this.wrapperHeight;
+                }
+
+                this.endTime = 0;
+                this.directionX = 0;
+                this.directionY = 0;
+
+                this.wrapperOffset = $(this.wrapper).offset();
+
+                this._execEvent('refresh');
+
+                this.resetPosition();
+
+            };
+
+            iscroll.resetPosition = function (time) {
+                if (!resetting && !this.isInTransition) {
+                    var x = iscroll.x;
+                    if (x > 50) {
+                        goToStore(currentIndex - 1);
+                    }
+                    else if (x < this.maxScrollX - 50) {
+                        goToStore(currentIndex + 1);
+                    }
+                }
+
+                return resetPosition.call(this, time);
+
+            };
+
+            iscroll._events.flick = null;
+
+            $('.pointer').on('tap', function () {
+                location.hash = currentIndex + '|' + iscroll.x;
+            });
+
+//            $(document).on('tap', '[mars-seed]', function () {
+//                var seed = $(this).attr('mars-seed');
+//                if (seed) {
+//                    Mar.Seed.request('link', 'click', seed);
+//                }
+//
+//            });
+
+            var hash = location.hash.replace('#', '');
+
+            if (hash) {
+                var params = hash.split('|');
+                if (history) {
+                    history.back();
+                }
+                enterStore(+params[0], +params[1]);
+            }
+
+            $(window).on('resize', function () {
+                if (!resizing) {
+                    if (currentPage == 'home') {
+                        window.removeEventListener('deviceorientation', tilterHandler);
+                        createTilters();
+                        resizing = false;
+                    }
+                    else if (currentPage == 'intro') {
+                        crosshairsWidth = crosshairsImage.width();
+                        crosshairsHeight = crosshairsImage.height();
+                        window.removeEventListener('deviceorientation', tilterHandler);
+                        createTilters();
+                        resizing = false;
+                    }
+                    else if (currentPage == 'store') {
+                        var index = currentIndex;
+                        var offset = iscroll.x;
+                        goToStore(null, null, function () {
+                            goToStore(index, offset, function () {
+                                resizing = false;
+                            });
+                        });
+                    }
+
+                    resizing = true;
+                }
+            });
+
+            // app 调用setUserInfo方法是在 dom ready之后，所以此处要延时执行
+//            setTimeout(function () {
+//                if (isApp) {
+//                    sharePage();
+//                } else {
+//                    bindWeChatApi();
+//                }
+//            }, 1000);
+        }
+
+        start();
+    });
+
+    //	$(document).ready(function(){
+    //		setUserInfo({uid:73032067,accessToken:"55ED915E7630BEC4BEA0FC83844932C60ADFE939",loginStatus:true,mobile:18666662681});
+    //	});
+
+    window.jQuery = $;
+</script>
+</body>
+</html>
